@@ -14,7 +14,7 @@ threads = []
 
 for i in range(100):
     thread = threading.Thread(target=start)
-    thread.daemon = True  # "daemon" è scritto in modo errato nel tuo codice
+    thread.daemon = True  
     threads.append(thread)
 
 for i in range(100):
