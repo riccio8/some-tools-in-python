@@ -113,9 +113,7 @@ macro_per_100g = {
     "Calorie (kcal)": (calorie_totali / peso_totale) * 100
 }
 
-peso_totale, macro_per_100g
-
-
+# Macro totali per l'intero dolce
 macro_totali_completi = {
     "Proteine (g)": proteine_totali,
     "Grassi (g)": grassi_totali,
@@ -123,4 +121,11 @@ macro_totali_completi = {
     "Calorie (kcal)": calorie_totali
 }
 
-macro_totali_completi
+# Stampa dei risultati
+print(f"Peso totale del dolce: {peso_totale} g\n")
+print("Macro per 100g del dolce:")
+for key, value in macro_per_100g.items():
+    print(f"{key}: {value:.2f}")
+print("\nMacro totali per l'intero dolce:")
+for key, value in macro_totali_completi.items():
+    print(f"{key}: {value:.2f}")
